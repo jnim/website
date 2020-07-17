@@ -1,0 +1,31 @@
+body {
+  height: 100%;
+  margin: 100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body div.row.title div[class|=col] p.header-text {
+  font-family: Georgia, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+}
+body div.row.title div[class|=col] p.subtitle-text {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  text-align: left;
+  color: lightgray;
+}
+body div.row.title div[class|=col] p.subsubtitle-text {
+  font-family: Georgia, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  color: lightgray;
+}
+body div.row.button {
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+
+/*# sourceMappingURL=formatting.css.map */
