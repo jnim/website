@@ -1,7 +1,10 @@
-// $bg_color: 
+// $bg_color:
+
 //#grad {
 //  background-image: radial-gradient(red, yellow, green);
 //}
+@function shadow($shade, $thickness) {  }
+$shadow_color: #000;
 head{
   //align-content: center;
 }
@@ -10,36 +13,70 @@ body {
   //background: rgb(234,255,255);
   //background: rgb(255,255,255);
   height: 100%;
-  margin: 100px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  width: 100%;
+  margin: 20px;
+
+//bg-image-div{
+position: relative; 
+height: 100vh;
+width: 100%;
+display: flex;
+//align-items: center;
+//justify-content: center;
+background-image: linear-gradient(rgba(230, 230, 230, 0.5), rgba(230, 230, 230, 0.5)),
+                  url("bg_final.jpg");
+
+//background-image: url('bg_final.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+ //div.background{
+ //  image: url('bg_final.jpg') no-repeat cover;
+ //  //background-size: cover;
+ //  //repeat: no-repeat;
+ //  opacity: 0.6;
+ //}
+//}    //opacity: 25%;
+  
+  
+  
+  //background-attachment: fixed; 
   //background-image: radial-gradient(circle at center, rgba(0,82,149,.35) 20%, rgba(0,82,149,0.5) 90%);
   //title-cont{
   //justify-content:left;
-  div.row.title{
+//div.row.title
+  div.row.text{
     //display:flex;
     //justify-content: left;
-    //align-items: center;
+    align-items: center;
     //font-family: Arial, Helvetica, sans-serif;
     //background: #ffffff;
-    div[class|='col']{
+    div[class|='col']{ //|= means that it starts with the string 'col'
       //justify-content: middle;
       //align-items: right;
       //text-align:left;
 
       p.header-text{
         font-family: Georgia, sans-serif;
-        font-size: 40px;
+        font-size: max(60px, 7vw);
+        //font-size: 10vw;
         font-weight: bold;
-        text-align: left;
-        color: black;
+        text-align: center;
+        color: white;
+        text-shadow: -1px 1px 8px $shadow_color, 
+                      -1px -1px 8px $shadow_color, 
+                      1px -1px 8px $shadow_color,
+                      1px 1px 8px $shadow_color; //, -1px 1px 0 #fff, -1px 1px 0 #fff, -1px 1px 0 #fff;
         //align-content:center;
       }
       p.subtitle-text{
         font-family: Georgia, serif;
-        font-size: 25px;
-        text-align: left;
-        color: lightgray;
+        font-size: max(30px, 3vw);
+        text-align: center;
+        color: white;
+        text-shadow: -1px 1px 8px $shadow_color, 
+                      -1px -1px 8px $shadow_color, 
+                      1px -1px 8px $shadow_color,
+                      1px 1px 8px $shadow_color;
         //align-content: center;
       }
       p.subsubtitle-text{
@@ -50,12 +87,22 @@ body {
         //align-content: center;
       }
     }
+
   }
-  
-  div.row.button{
-    font-size: 35px;
-    padding-bottom:30px;
-    //color:#0E889E;
-  }
+  div.row.button.page{  
+        width: 100px;
+        justify-content: flex-start;
+        text-color: green;
+        font-size: max(25px, 3vw);
+        padding-bottom:30px;
+    a {
+      color: #003399;
+      background: linear-gradient(rgba(230, 108, 160, 0.5), rgba(204, 0, 102, 0.5));
+      padding: 20px;
+      border: 5px white;
+    }
+        
+        //make height and width
+      }
 }
 

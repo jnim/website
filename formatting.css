@@ -1,31 +1,51 @@
 body {
   height: 100%;
-  margin: 100px;
+  width: 100%;
+  margin: 20px;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(rgba(230, 230, 230, 0.5), rgba(230, 230, 230, 0.5)), url("bg_final.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
-body div.row.title div[class|=col] p.header-text {
+body div.row.text {
+  align-items: center;
+}
+body div.row.text div[class|=col] p.header-text {
   font-family: Georgia, sans-serif;
-  font-size: 40px;
+  font-size: max(60px, 7vw);
   font-weight: bold;
-  text-align: left;
-  color: black;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 1px 8px #000, -1px -1px 8px #000, 1px -1px 8px #000, 1px 1px 8px #000;
 }
-body div.row.title div[class|=col] p.subtitle-text {
+body div.row.text div[class|=col] p.subtitle-text {
   font-family: Georgia, serif;
-  font-size: 25px;
-  text-align: left;
-  color: lightgray;
+  font-size: max(30px, 3vw);
+  text-align: center;
+  color: white;
+  text-shadow: -1px 1px 8px #000, -1px -1px 8px #000, 1px -1px 8px #000, 1px 1px 8px #000;
 }
-body div.row.title div[class|=col] p.subsubtitle-text {
+body div.row.text div[class|=col] p.subsubtitle-text {
   font-family: Georgia, sans-serif;
   font-size: 10px;
   text-align: left;
   color: lightgray;
 }
-body div.row.button {
-  font-size: 35px;
+body div.row.button.page {
+  width: 100px;
+  justify-content: flex-start;
+  text-color: green;
+  font-size: max(25px, 3vw);
   padding-bottom: 30px;
+}
+body div.row.button.page a {
+  color: #003399;
+  background: linear-gradient(rgba(230, 108, 160, 0.5), rgba(204, 0, 102, 0.5));
+  padding: 20px;
+  border: 5px white;
 }
 
 /*# sourceMappingURL=formatting.css.map */
